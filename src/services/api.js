@@ -7,3 +7,12 @@ export const getRandomRecipes = async (number = 1) => {
     console.log(data)
     return data.recipes
 }
+
+export const getSpecificRecipes = async(name,number=12) => {
+    
+    const reponse = await fetch(`${BASE_URL}/complexSearch${API_KEY}&query=${name}&number=${number}`)
+    const data = await reponse.json()
+    console.log("name: " + name)
+    console.log(data)
+    return data.results
+}
