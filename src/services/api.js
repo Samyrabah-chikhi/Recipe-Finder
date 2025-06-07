@@ -1,0 +1,9 @@
+const API_KEY = "?apiKey=fac6786a19f44f058c604ebaacda6a73"
+const BASE_URL = "https://api.spoonacular.com/recipes"
+
+export const getRandomRecipes = async (number = 1) => {
+    const response = await fetch(`${BASE_URL}/random${API_KEY}&number=${number}`)
+    const data = await response.json()
+    console.log(data)
+    return data.recipes
+}
