@@ -1,3 +1,4 @@
+const API_KEY2 = "?apiKey=8fef86c7107b43d5a28f98a6892bbbfb"
 const API_KEY = "?apiKey=fac6786a19f44f058c604ebaacda6a73"
 const BASE_URL = "https://api.spoonacular.com/recipes"
 
