@@ -17,3 +17,9 @@ export const getSpecificRecipes = async(name,number=12) => {
     console.log(data)
     return data.results
 }
+
+export const getRecipeById = async(id) => {
+    const response = await fetch(`${BASE_URL}/${id}/information${API_KEY}`)
+    const data = await response.json()
+    return data
+}

@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import NavBar from "../components/NavBar";
 import { getRandomRecipes, getSpecificRecipes } from "../services/api";
 import FoodCard from "../components/FoodCard";
-
-const scrollLoad = 20;
+import { scrollLoad } from "../services/constants";
 
 function Home() {
   const [recipes, setRecipes] = useState([]);

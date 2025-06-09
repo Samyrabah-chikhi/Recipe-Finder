@@ -8,6 +8,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/food/:id" element={<FoodDetail></FoodDetail>}></Route>
+        <Route path="/favorites" element={<div>Not Done Yet!</div>}></Route>
       </Routes>
     </BrowserRouter>
   );
